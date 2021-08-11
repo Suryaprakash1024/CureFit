@@ -10,6 +10,10 @@ import { HomeComponent } from './home/home.component';
 // import "bootswatch/dist/litera/bootstrap.min.css";
 // import "bootswatch/dist/litera/_variables.scss";
 
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {MenuItem} from 'primeng/api';                  //api
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +23,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     NgbModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AccordionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

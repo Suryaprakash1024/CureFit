@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  accord1 = true;
+  accord2 = false;
+  accord3 = false;
+  constructor() {
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
