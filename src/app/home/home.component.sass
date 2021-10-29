@@ -37,91 +37,78 @@ img.css-2o0220-arrowImg
     font-size: 14px
     color: #6e6d6d
 
-//Accortion -->
-.css-tw7fmk-individualCell-active
-    display:table-cell
-    vertical-align:bottom
-    position:relative
-    width:16.666%
-    background-repeat:no-repeat
-    background-position:center center
-    -webkit-transition:(all 500ms ease)
-    transition:(all 500ms ease)
-    width:50% !important
+    /*Accortion Design*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One')
+@import url('https://fonts.googleapis.com/css?family=Exo+2')
+html 
+    height: 100vh
 
-.css-tw7fmk-individualCell-active .action-href *
-    opacity:1 !important
-    webkit-transform:translateX(0)
-    -webkit-transform:translateX(0)
-    -ms-transform:translateX(0)
-    transform:translateX(0)
-    -webkit-animation:(animation-1f5vc5e ease-in-out 0.8s)
-    animation:(animation-1f5vc5e ease-in-out 0.8s)
+body 
+    padding: 0
+    margin: 0
+    font-family: 'Fjalla One', sans-serif
+    background: linear-gradient( #fff, #fefefe, #eaeaea)
 
-.css-tw7fmk-individualCell-active .action-href .text-title-right
-    margin-left:55%
+.accordion 
+    background: rgba(0, 0, 0, 0.10)
+    height: 300px
+    margin: 20px auto
+    display: flex
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47)
+    flex-direction: row
+    cursor: pointer
+    margin-bottom: 100px
+
+.box 
+    position: relative
+    height: 100%
+    flex: 1
+    background-position: left
+    background-size: cover
+    transition: .7s
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47)
+
+.box:hover
+    flex: 7
+    height: 400px
+
+.a1 
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/6285c073-5e3d-4abf-9189-21403628a1f4.png")
+
+.a2 
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/f66c717a-bcb9-4d64-b227-115d1010b610.jpeg")
+
+.a3 
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/aedcb538-777e-4564-b422-30eb8dc220d2.png")
+    color: #fff
+p 
+    font-weight: normal
+    font-family: 'Exo 2', sans-serif
+
+.text 
+    position: absolute
+    bottom: 0
+    opacity: 0
+    padding: 8px
+    color: white
+
+.box:hover .text
+    opacity:1
+
+h1 
+    width: 250px
+    text-align: center
+    margin: 100px auto 20px auto
+
+@media screen and (max-width: 800px)
+    body
+        margin: 0
+    .accordion 
+        flex-direction: column
+        height: 700px
+        box-shadow: none
+    .box 
+        box-shadow: none
+    .box:hover 
+        flex: 7
     
-.css-tw7fmk-individualCell-active .action-href .text-title-right p
-    margin-left:61%
-    
-.css-tw7fmk-individualCell-active:hover li
-    width:8% !important
-
-.css-tw7fmk-individualCell-active:hover li .action-href *
-    opacity:0 !important
-
-
-
-.css-murr60-accordianImageRight-bgImage-largeWidth
-    height:70%
-    object-fit:cover
-    float:right
-    object-position:20%
-    height:34em
-    position:relative
-    object-fit:cover
-    object-position:80% 0
-
-@media screen and (min-width:1300px)
-    .css-murr60-accordianImageRight-bgImage-largeWidth
-        height:44em
-
-.css-tw7fmk-individualCell-active
-    display:table-cell
-    vertical-align:bottom
-    position:relative
-    width:16.666%
-    background-repeat:no-repeat
-    background-position:center center
-    -webkit-transition:(all 500ms ease)
-    transition:(all 500ms ease)
-    width:50% !important
-.css-tw7fmk-individualCell-active .action-href *
-    opacity:1 !important
-    webkit-transform:translateX(0)
-    -webkit-transform:translateX(0)
-    -ms-transform:translateX(0)
-    transform:translateX(0)
-    -webkit-animation:(animation-1f5vc5e ease-in-out 0.8s)
-    animation:(animation-1f5vc5e ease-in-out 0.8s)
-.css-tw7fmk-individualCell-active .action-href .text-title-right
-    margin-left:55%
-.css-tw7fmk-individualCell-active .action-href .text-title-right p
-    margin-left:61%
-.css-tw7fmk-individualCell-active:hover li
-    width:8% !important
-.css-tw7fmk-individualCell-active:hover li .action-href *
-    opacity:0 !important
-
-
-.css-19csi1s-accordion-fadeInAnimation
-    width:100%
-    height:470px
-    overflow:hidden
-    margin:30px auto
-    position:relative
-    border-radius:10px
-    -webkit-animation:(animation-1o5jvb1 ease 2s)
-    animation:(animation-1o5jvb1 ease 2s)
-    -ms-animation:(animation-1o5jvb1 ease 2s)
-    -webkit-animation:(animation-1o5jvb1 ease 2s)
