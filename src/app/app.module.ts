@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 import {MenuItem} from 'primeng/api';                  //api
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -25,7 +27,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     AccordionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MessageModule,
+    MessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
